@@ -91,26 +91,16 @@ body {
 /* end header */
 
 /* start media */
-.media {
-  padding: 20px 0;
-  background-color: #fff;
-}
 
-.media h3 {
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.media p {
-  text-align: left;
-  color: #777;
-  line-height: 1.4;
-}
-
-.media i {
+.media svg {
   color: #777;
   margin: 17px 15px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .media .fa-facebook:hover {
@@ -133,6 +123,24 @@ body {
 }
 .media .fa-user-friends:hover {
   color: #009f4d;
+}
+
+.media .last:hover {
+  color: burlywood;
+}
+.media h3 {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.media h2:hover {
+  color: #ff8b38;
+}
+
+.media .myp {
+  line-height: 2;
 }
 
 /* end media */
@@ -200,6 +208,18 @@ body {
   max-height: 100%;
   max-width: 100%;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .tabs .allTabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs .allTabs li {
+    margin: 0 10px;
+  }
 }
 
 /* end tabs */
